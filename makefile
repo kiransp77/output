@@ -1,10 +1,10 @@
-product.exe:big3.c fact.c main.c
-	gcc -o product.exe big3.c fact.c main.c
-main.o:main.c
+product.exe:big3.o fact.o main.o
+	gcc -o product.exe big3.o fact.o main.o
+main.o : main.c
 	gcc -c main.c
-big3.o:big3.c
+big3.o : big3.c
 	gcc -c big3.c
-fact.o:fact.c
+fact.o : fact.c
 	gcc -c fact.c
 
 
