@@ -1,5 +1,5 @@
 product.exe:big3.c fact.c main.c
-	gcc -c big3.c fact.c main.c
+	gcc -o product.exe big3.c fact.c main.c
 main.o:main.c
 	gcc -c main.c
 big3.o:big3.c
