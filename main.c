@@ -4,4 +4,5 @@ big3();
 pal();
 fact();
 positive();
+integers();
 }
