@@ -5,4 +5,5 @@ pal();
 fact();
 positive();
 integers();
+fib();
 }

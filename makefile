@@ -1,5 +1,5 @@
-product.exe : big3.o fact.o pal.o main.o positive.o integers.o
-	gcc -o product.exe big3.o fact.o pal.o main.o positive.o integers.o
+product.exe : big3.o fact.o pal.o main.o positive.o integers.o fib.o
+	gcc -o product.exe big3.o fact.o pal.o main.o positive.o integers.o fib.o
 main.o : main.c
 	gcc -c main.c
 big3.o : big3.c
@@ -12,4 +12,6 @@ positive.o : positive.c
 	gcc -c positive.c
 integers.o : integers.c
 	gcc -c integers.c
+fib.o : fib.c
+	gcc -c fib.c
 
